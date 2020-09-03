@@ -1,6 +1,6 @@
 # SlogBlocker
 
-SlogBlocker is a Safari Extension that rearranges and improves the DOM when viewing the comments section for the Savage Love Blog (SLOG) at http://www.thestranger.com/seattle/SavageLove.
+SlogBlocker is a Safari Extension that rearranges and improves the DOM when viewing the comments section for the [Savage Love Blog (SLOG)](http://www.thestranger.com/seattle/SavageLove).
 
 1. It creates duplicate page navigation buttons at the top of the comments pages.
 2. It moves the name of each writer from the end of their comment to the top.
@@ -10,7 +10,7 @@ SlogBlocker is a Safari Extension that rearranges and improves the DOM when view
 
 # Installation
 
-To install SlogBlocker on MacOS, download and run the SlogBlocker application. It will install the extension. You'll need to enable the extension in Safari.
+To install SlogBlocker on MacOS, download and run the SlogBlocker application from the [Releases](https://github.com/ahoyfubar/SlogBlocker/releases/) page. It will install the extension. You'll need to enable the extension in Safari.
 
 # Uninstallation
 
