@@ -1,0 +1,503 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		EB9096B024CFCC25004DB984 /* stylesheet.css in Resources */ = {isa = PBXBuildFile; fileRef = EB9096AF24CFCC25004DB984 /* stylesheet.css */; };
+		EBFB627924CF47020074A3AF /* SlogBlocker.entitlements in Resources */ = {isa = PBXBuildFile; fileRef = EBFB627824CF47020074A3AF /* SlogBlocker.entitlements */; };
+		EBFB627C24CF47020074A3AF /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = EBFB627B24CF47020074A3AF /* AppDelegate.m */; };
+		EBFB627F24CF47020074A3AF /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EBFB627D24CF47020074A3AF /* Main.storyboard */; };
+		EBFB628224CF47020074A3AF /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EBFB628124CF47020074A3AF /* ViewController.m */; };
+		EBFB628424CF47030074A3AF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EBFB628324CF47030074A3AF /* Assets.xcassets */; };
+		EBFB628724CF47030074A3AF /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = EBFB628624CF47030074A3AF /* main.m */; };
+		EBFB628D24CF47030074A3AF /* SlogBlocker Extension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = EBFB628C24CF47030074A3AF /* SlogBlocker Extension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		EBFB629224CF47030074A3AF /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EBFB629124CF47030074A3AF /* Cocoa.framework */; };
+		EBFB629624CF47030074A3AF /* SafariExtensionHandler.m in Sources */ = {isa = PBXBuildFile; fileRef = EBFB629524CF47030074A3AF /* SafariExtensionHandler.m */; };
+		EBFB629F24CF47030074A3AF /* script.js in Resources */ = {isa = PBXBuildFile; fileRef = EBFB629E24CF47030074A3AF /* script.js */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		EBFB628E24CF47030074A3AF /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = EBFB626D24CF47020074A3AF /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = EBFB628B24CF47030074A3AF;
+			remoteInfo = "SlogBlocker Extension";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		EBFB62A824CF47030074A3AF /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				EBFB628D24CF47030074A3AF /* SlogBlocker Extension.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		EB9096AF24CFCC25004DB984 /* stylesheet.css */ = {isa = PBXFileReference; lastKnownFileType = text.css; path = stylesheet.css; sourceTree = "<group>"; };
+		EBFB627524CF47020074A3AF /* SlogBlocker.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SlogBlocker.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		EBFB627824CF47020074A3AF /* SlogBlocker.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = SlogBlocker.entitlements; sourceTree = "<group>"; };
+		EBFB627A24CF47020074A3AF /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		EBFB627B24CF47020074A3AF /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		EBFB627E24CF47020074A3AF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		EBFB628024CF47020074A3AF /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		EBFB628124CF47020074A3AF /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		EBFB628324CF47030074A3AF /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		EBFB628524CF47030074A3AF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		EBFB628624CF47030074A3AF /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		EBFB628C24CF47030074A3AF /* SlogBlocker Extension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "SlogBlocker Extension.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
+		EBFB629124CF47030074A3AF /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
+		EBFB629424CF47030074A3AF /* SafariExtensionHandler.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SafariExtensionHandler.h; sourceTree = "<group>"; };
+		EBFB629524CF47030074A3AF /* SafariExtensionHandler.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SafariExtensionHandler.m; sourceTree = "<group>"; };
+		EBFB629D24CF47030074A3AF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		EBFB629E24CF47030074A3AF /* script.js */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.javascript; path = script.js; sourceTree = "<group>"; };
+		EBFB62A224CF47030074A3AF /* SlogBlocker_Extension.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = SlogBlocker_Extension.entitlements; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		EBFB627224CF47020074A3AF /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EBFB628924CF47030074A3AF /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EBFB629224CF47030074A3AF /* Cocoa.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		EBFB626C24CF47020074A3AF = {
+			isa = PBXGroup;
+			children = (
+				EBFB627724CF47020074A3AF /* SlogBlocker */,
+				EBFB629324CF47030074A3AF /* SlogBlocker Extension */,
+				EBFB629024CF47030074A3AF /* Frameworks */,
+				EBFB627624CF47020074A3AF /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		EBFB627624CF47020074A3AF /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				EBFB627524CF47020074A3AF /* SlogBlocker.app */,
+				EBFB628C24CF47030074A3AF /* SlogBlocker Extension.appex */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		EBFB627724CF47020074A3AF /* SlogBlocker */ = {
+			isa = PBXGroup;
+			children = (
+				EBFB627824CF47020074A3AF /* SlogBlocker.entitlements */,
+				EBFB627A24CF47020074A3AF /* AppDelegate.h */,
+				EBFB627B24CF47020074A3AF /* AppDelegate.m */,
+				EBFB627D24CF47020074A3AF /* Main.storyboard */,
+				EBFB628024CF47020074A3AF /* ViewController.h */,
+				EBFB628124CF47020074A3AF /* ViewController.m */,
+				EBFB628324CF47030074A3AF /* Assets.xcassets */,
+				EBFB628524CF47030074A3AF /* Info.plist */,
+				EBFB628624CF47030074A3AF /* main.m */,
+			);
+			path = SlogBlocker;
+			sourceTree = "<group>";
+		};
+		EBFB629024CF47030074A3AF /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				EBFB629124CF47030074A3AF /* Cocoa.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		EBFB629324CF47030074A3AF /* SlogBlocker Extension */ = {
+			isa = PBXGroup;
+			children = (
+				EBFB629424CF47030074A3AF /* SafariExtensionHandler.h */,
+				EBFB629524CF47030074A3AF /* SafariExtensionHandler.m */,
+				EBFB629D24CF47030074A3AF /* Info.plist */,
+				EBFB629E24CF47030074A3AF /* script.js */,
+				EB9096AF24CFCC25004DB984 /* stylesheet.css */,
+				EBFB62A224CF47030074A3AF /* SlogBlocker_Extension.entitlements */,
+			);
+			path = "SlogBlocker Extension";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		EBFB627424CF47020074A3AF /* SlogBlocker */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = EBFB62A924CF47030074A3AF /* Build configuration list for PBXNativeTarget "SlogBlocker" */;
+			buildPhases = (
+				EBFB627124CF47020074A3AF /* Sources */,
+				EBFB627224CF47020074A3AF /* Frameworks */,
+				EBFB627324CF47020074A3AF /* Resources */,
+				EBFB62A824CF47030074A3AF /* Embed App Extensions */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				EBFB628F24CF47030074A3AF /* PBXTargetDependency */,
+			);
+			name = SlogBlocker;
+			productName = SlogBlocker;
+			productReference = EBFB627524CF47020074A3AF /* SlogBlocker.app */;
+			productType = "com.apple.product-type.application";
+		};
+		EBFB628B24CF47030074A3AF /* SlogBlocker Extension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = EBFB62A524CF47030074A3AF /* Build configuration list for PBXNativeTarget "SlogBlocker Extension" */;
+			buildPhases = (
+				EBFB628824CF47030074A3AF /* Sources */,
+				EBFB628924CF47030074A3AF /* Frameworks */,
+				EBFB628A24CF47030074A3AF /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "SlogBlocker Extension";
+			productName = "SlogBlocker Extension";
+			productReference = EBFB628C24CF47030074A3AF /* SlogBlocker Extension.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		EBFB626D24CF47020074A3AF /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 1160;
+				ORGANIZATIONNAME = fubar;
+				TargetAttributes = {
+					EBFB627424CF47020074A3AF = {
+						CreatedOnToolsVersion = 11.6;
+					};
+					EBFB628B24CF47030074A3AF = {
+						CreatedOnToolsVersion = 11.6;
+					};
+				};
+			};
+			buildConfigurationList = EBFB627024CF47020074A3AF /* Build configuration list for PBXProject "SlogBlocker" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = EBFB626C24CF47020074A3AF;
+			productRefGroup = EBFB627624CF47020074A3AF /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				EBFB627424CF47020074A3AF /* SlogBlocker */,
+				EBFB628B24CF47030074A3AF /* SlogBlocker Extension */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		EBFB627324CF47020074A3AF /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EBFB627924CF47020074A3AF /* SlogBlocker.entitlements in Resources */,
+				EBFB628424CF47030074A3AF /* Assets.xcassets in Resources */,
+				EBFB627F24CF47020074A3AF /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EBFB628A24CF47030074A3AF /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EBFB629F24CF47030074A3AF /* script.js in Resources */,
+				EB9096B024CFCC25004DB984 /* stylesheet.css in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		EBFB627124CF47020074A3AF /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EBFB628224CF47020074A3AF /* ViewController.m in Sources */,
+				EBFB628724CF47030074A3AF /* main.m in Sources */,
+				EBFB627C24CF47020074A3AF /* AppDelegate.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EBFB628824CF47030074A3AF /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EBFB629624CF47030074A3AF /* SafariExtensionHandler.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		EBFB628F24CF47030074A3AF /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = EBFB628B24CF47030074A3AF /* SlogBlocker Extension */;
+			targetProxy = EBFB628E24CF47030074A3AF /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		EBFB627D24CF47020074A3AF /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				EBFB627E24CF47020074A3AF /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		EBFB62A324CF47030074A3AF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "Mac Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEVELOPMENT_TEAM = N8D2RX8FXR;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.12;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx10.12;
+			};
+			name = Debug;
+		};
+		EBFB62A424CF47030074A3AF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "Mac Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEVELOPMENT_TEAM = N8D2RX8FXR;
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.12;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx10.12;
+			};
+			name = Release;
+		};
+		EBFB62A624CF47030074A3AF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = "SlogBlocker Extension/SlogBlocker_Extension.entitlements";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = "SlogBlocker Extension/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@executable_path/../../../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.fubar.SlogBlocker-Extension";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		EBFB62A724CF47030074A3AF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = "SlogBlocker Extension/SlogBlocker_Extension.entitlements";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = "SlogBlocker Extension/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@executable_path/../../../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.fubar.SlogBlocker-Extension";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
+		EBFB62AA24CF47030074A3AF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = SlogBlocker/SlogBlocker.entitlements;
+				CODE_SIGN_IDENTITY = "Mac Developer";
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = N8D2RX8FXR;
+				INFOPLIST_FILE = SlogBlocker/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.fubar.SlogBlocker;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx10.12;
+			};
+			name = Debug;
+		};
+		EBFB62AB24CF47030074A3AF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = SlogBlocker/SlogBlocker.entitlements;
+				CODE_SIGN_IDENTITY = "Mac Developer";
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = N8D2RX8FXR;
+				INFOPLIST_FILE = SlogBlocker/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_BUNDLE_IDENTIFIER = com.fubar.SlogBlocker;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx10.12;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		EBFB627024CF47020074A3AF /* Build configuration list for PBXProject "SlogBlocker" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EBFB62A324CF47030074A3AF /* Debug */,
+				EBFB62A424CF47030074A3AF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		EBFB62A524CF47030074A3AF /* Build configuration list for PBXNativeTarget "SlogBlocker Extension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EBFB62A624CF47030074A3AF /* Debug */,
+				EBFB62A724CF47030074A3AF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		EBFB62A924CF47030074A3AF /* Build configuration list for PBXNativeTarget "SlogBlocker" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EBFB62AA24CF47030074A3AF /* Debug */,
+				EBFB62AB24CF47030074A3AF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = EBFB626D24CF47020074A3AF /* Project object */;
+}
