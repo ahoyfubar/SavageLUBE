@@ -10,7 +10,7 @@ SlogBlocker is a Safari Extension that rearranges and improves the DOM when view
 
 # Installation
 
-To install SlogBlocker on MacOS, download and run the SlogBlocker application from the [Releases](https://github.com/ahoyfubar/SlogBlocker/releases/) page. It will install the extension. You'll need to enable the extension in Safari.
+To install SlogBlocker on MacOS, download the SlogBlocker application from the [Releases](https://github.com/ahoyfubar/SlogBlocker/releases/) page to a location on your computer such as the Applications folder. Run the SlockBlocker application by clicking on the file and selecting Open from the menu. MacOS may ask you to confirm. Running SlogBlocker will install the extension. You'll need to enable the extension in Safari.
 
 # Uninstallation
 
