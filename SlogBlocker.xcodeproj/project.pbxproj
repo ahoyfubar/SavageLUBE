@@ -8,7 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		EB9096B024CFCC25004DB984 /* stylesheet.css in Resources */ = {isa = PBXBuildFile; fileRef = EB9096AF24CFCC25004DB984 /* stylesheet.css */; };
-		EBFB627924CF47020074A3AF /* SlogBlocker.entitlements in Resources */ = {isa = PBXBuildFile; fileRef = EBFB627824CF47020074A3AF /* SlogBlocker.entitlements */; };
 		EBFB627C24CF47020074A3AF /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = EBFB627B24CF47020074A3AF /* AppDelegate.m */; };
 		EBFB627F24CF47020074A3AF /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EBFB627D24CF47020074A3AF /* Main.storyboard */; };
 		EBFB628224CF47020074A3AF /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EBFB628124CF47020074A3AF /* ViewController.m */; };
@@ -185,7 +184,7 @@
 		EBFB626D24CF47020074A3AF /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastUpgradeCheck = 1160;
+				LastUpgradeCheck = 1220;
 				ORGANIZATIONNAME = fubar;
 				TargetAttributes = {
 					EBFB627424CF47020074A3AF = {
@@ -220,7 +219,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				EBFB627924CF47020074A3AF /* SlogBlocker.entitlements in Resources */,
 				EBFB628424CF47030074A3AF /* Assets.xcassets in Resources */,
 				EBFB627F24CF47020074A3AF /* Main.storyboard in Resources */,
 			);
@@ -304,6 +302,7 @@
 				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
 				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
 				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
 				CLANG_WARN_STRICT_PROTOTYPES = YES;
 				CLANG_WARN_SUSPICIOUS_MOVE = YES;
@@ -334,7 +333,7 @@
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
-				SDKROOT = macosx10.12;
+				SDKROOT = macosx;
 			};
 			name = Debug;
 		};
@@ -364,6 +363,7 @@
 				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
 				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
 				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
 				CLANG_WARN_STRICT_PROTOTYPES = YES;
 				CLANG_WARN_SUSPICIOUS_MOVE = YES;
@@ -388,7 +388,7 @@
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
-				SDKROOT = macosx10.12;
+				SDKROOT = macosx;
 			};
 			name = Release;
 		};
@@ -396,6 +396,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CODE_SIGN_ENTITLEMENTS = "SlogBlocker Extension/SlogBlocker_Extension.entitlements";
+				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = "SlogBlocker Extension/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -403,6 +404,7 @@
 					"@executable_path/../Frameworks",
 					"@executable_path/../../../../Frameworks",
 				);
+				MARKETING_VERSION = 1.1;
 				PRODUCT_BUNDLE_IDENTIFIER = "com.fubar.SlogBlocker-Extension";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
@@ -413,6 +415,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CODE_SIGN_ENTITLEMENTS = "SlogBlocker Extension/SlogBlocker_Extension.entitlements";
+				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = "SlogBlocker Extension/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -420,6 +423,7 @@
 					"@executable_path/../Frameworks",
 					"@executable_path/../../../../Frameworks",
 				);
+				MARKETING_VERSION = 1.1;
 				PRODUCT_BUNDLE_IDENTIFIER = "com.fubar.SlogBlocker-Extension";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
@@ -431,18 +435,20 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_ENTITLEMENTS = SlogBlocker/SlogBlocker.entitlements;
-				CODE_SIGN_IDENTITY = "Mac Developer";
+				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
 				DEVELOPMENT_TEAM = N8D2RX8FXR;
+				ENABLE_HARDENED_RUNTIME = YES;
 				INFOPLIST_FILE = SlogBlocker/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/../Frameworks",
 				);
+				MARKETING_VERSION = 1.1;
 				PRODUCT_BUNDLE_IDENTIFIER = com.fubar.SlogBlocker;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SDKROOT = macosx10.12;
+				SDKROOT = macosx;
 			};
 			name = Debug;
 		};
@@ -451,19 +457,21 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_ENTITLEMENTS = SlogBlocker/SlogBlocker.entitlements;
-				CODE_SIGN_IDENTITY = "Mac Developer";
+				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
 				DEVELOPMENT_TEAM = N8D2RX8FXR;
+				ENABLE_HARDENED_RUNTIME = YES;
 				INFOPLIST_FILE = SlogBlocker/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/../Frameworks",
 				);
+				MARKETING_VERSION = 1.1;
 				ONLY_ACTIVE_ARCH = YES;
 				PRODUCT_BUNDLE_IDENTIFIER = com.fubar.SlogBlocker;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SDKROOT = macosx10.12;
+				SDKROOT = macosx;
 			};
 			name = Release;
 		};

@@ -33,9 +33,9 @@
         [prefs setBool:false forKey:@"addAvatarTooltips"];
         [prefs setBool:true forKey:@"moveUserBylines"];
         [prefs setBool:true forKey:@"addTopPagination"];
+        [prefs setBool:true forKey:@"addCommentLinks"];
         [prefs synchronize];
     }
-    [prefs setBool:true forKey:@"addCommentLinks"];
     [prefs synchronize];
 }
 

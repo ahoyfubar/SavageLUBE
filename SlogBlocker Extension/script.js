@@ -30,6 +30,10 @@ function filterComments(appInfo) {
     //console.log(appInfo);
     
     if (document.body.classList.contains('article-section-savage-love')) {
+        var path = "/savage-love/comments";
+        var href = window.location.href;
+        var baseurl = href.substring(0, href.indexOf(path) + path.length) + "/";
+        
         var comments = document.body.getElementsByClassName('comment-container');
         for (var i=0; i<comments.length; i++) {
             var byline = comments[i].getElementsByClassName('comment-byline');
@@ -50,13 +54,14 @@ function filterComments(appInfo) {
                     replaceAvatar(comments[i], user.avatar);
                 }
             }
+            //if (appInfo.addCommentLinks == true) {
+                addCommentLinks(baseurl, comments[i]);
+            //}
             if (appInfo.addAvatarTooltips == true) {
                 addAvatarTooltip(comments[i], name);
             }
             if (appInfo.moveUserBylines == true) {
                 moveUserByline(comments[i]);
-            }
-            if (appInfo.addCommentLinks == true) {
             }
         }
         if ((comments.length > 0) && (appInfo.addTopPagination == true)) {
@@ -203,6 +208,31 @@ function addAvatarTooltip(comment, name) {
     tooltip.classList.add("user-tooltip-text");
     tooltip.appendChild(document.createTextNode(name));
     image[0].insertBefore(tooltip, image[0].firstChild);
+}
+
+function addCommentLinks(baseurl, comment) {
+    var body = comment.getElementsByClassName('comment-body');
+    var tags = body[0].getElementsByTagName('p');
+    for (i=0; i < tags.length; i++) {
+        var outerHTML = tags[i].outerHTML;
+        let parts = outerHTML.split('@');
+        if (parts.length > 1) {
+            for (j=1; j < parts.length; j++) {
+                let refno = parts[j].match(/^ ?[0-9]+/g);
+                if (refno) {
+                    let tagno = parseInt(refno[0]);
+                    if (tagno > 0) {
+                        let target = document.getElementById("comment-" + tagno);
+                        let href = target ? "#comment-" : baseurl;
+                        let link = "<a href='" + href + tagno + "'>@" + refno + "</a>";
+                        let text = parts[j].substring(refno[0].length);
+                        parts[j] = link + text;
+                    }
+                }
+            }
+            tags[i].outerHTML = parts.join('');
+        }
+    }
 }
 
 function addTopPagination(comments) {
