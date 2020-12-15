@@ -7,7 +7,14 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		EB9096B024CFCC25004DB984 /* stylesheet.css in Resources */ = {isa = PBXBuildFile; fileRef = EB9096AF24CFCC25004DB984 /* stylesheet.css */; };
+		EB29E076258807B700A6E3B5 /* SafariExtensionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EB29E074258807B700A6E3B5 /* SafariExtensionViewController.m */; };
+		EB29E077258807B700A6E3B5 /* SafariExtensionViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = EB29E075258807B700A6E3B5 /* SafariExtensionViewController.xib */; };
+		EB29E07D2588089700A6E3B5 /* slogicon.pdf in Resources */ = {isa = PBXBuildFile; fileRef = EB29E07C2588089600A6E3B5 /* slogicon.pdf */; };
+		EB29E0832588175D00A6E3B5 /* options.css in Resources */ = {isa = PBXBuildFile; fileRef = EB29E0802588175D00A6E3B5 /* options.css */; };
+		EB29E0842588175D00A6E3B5 /* options.html in Resources */ = {isa = PBXBuildFile; fileRef = EB29E0812588175D00A6E3B5 /* options.html */; };
+		EB29E0852588175D00A6E3B5 /* options.js in Resources */ = {isa = PBXBuildFile; fileRef = EB29E0822588175D00A6E3B5 /* options.js */; };
+		EBCC40272587D82C00597847 /* slogblocker.css in Resources */ = {isa = PBXBuildFile; fileRef = EBCC40242587D82C00597847 /* slogblocker.css */; };
+		EBCC40282587D82C00597847 /* content.js in Resources */ = {isa = PBXBuildFile; fileRef = EBCC40252587D82C00597847 /* content.js */; };
 		EBFB627C24CF47020074A3AF /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = EBFB627B24CF47020074A3AF /* AppDelegate.m */; };
 		EBFB627F24CF47020074A3AF /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EBFB627D24CF47020074A3AF /* Main.storyboard */; };
 		EBFB628224CF47020074A3AF /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EBFB628124CF47020074A3AF /* ViewController.m */; };
@@ -16,7 +23,6 @@
 		EBFB628D24CF47030074A3AF /* SlogBlocker Extension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = EBFB628C24CF47030074A3AF /* SlogBlocker Extension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		EBFB629224CF47030074A3AF /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EBFB629124CF47030074A3AF /* Cocoa.framework */; };
 		EBFB629624CF47030074A3AF /* SafariExtensionHandler.m in Sources */ = {isa = PBXBuildFile; fileRef = EBFB629524CF47030074A3AF /* SafariExtensionHandler.m */; };
-		EBFB629F24CF47030074A3AF /* script.js in Resources */ = {isa = PBXBuildFile; fileRef = EBFB629E24CF47030074A3AF /* script.js */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -44,7 +50,15 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
-		EB9096AF24CFCC25004DB984 /* stylesheet.css */ = {isa = PBXFileReference; lastKnownFileType = text.css; path = stylesheet.css; sourceTree = "<group>"; };
+		EB29E073258807B700A6E3B5 /* SafariExtensionViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SafariExtensionViewController.h; sourceTree = "<group>"; };
+		EB29E074258807B700A6E3B5 /* SafariExtensionViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SafariExtensionViewController.m; sourceTree = "<group>"; };
+		EB29E075258807B700A6E3B5 /* SafariExtensionViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SafariExtensionViewController.xib; sourceTree = "<group>"; };
+		EB29E07C2588089600A6E3B5 /* slogicon.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = slogicon.pdf; sourceTree = "<group>"; };
+		EB29E0802588175D00A6E3B5 /* options.css */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.css; name = options.css; path = "Chrome Extension/options.css"; sourceTree = SOURCE_ROOT; };
+		EB29E0812588175D00A6E3B5 /* options.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; name = options.html; path = "Chrome Extension/options.html"; sourceTree = SOURCE_ROOT; };
+		EB29E0822588175D00A6E3B5 /* options.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; name = options.js; path = "Chrome Extension/options.js"; sourceTree = SOURCE_ROOT; };
+		EBCC40242587D82C00597847 /* slogblocker.css */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.css; name = slogblocker.css; path = "Chrome Extension/slogblocker.css"; sourceTree = SOURCE_ROOT; };
+		EBCC40252587D82C00597847 /* content.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; name = content.js; path = "Chrome Extension/content.js"; sourceTree = SOURCE_ROOT; };
 		EBFB627524CF47020074A3AF /* SlogBlocker.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SlogBlocker.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		EBFB627824CF47020074A3AF /* SlogBlocker.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = SlogBlocker.entitlements; sourceTree = "<group>"; };
 		EBFB627A24CF47020074A3AF /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -60,7 +74,6 @@
 		EBFB629424CF47030074A3AF /* SafariExtensionHandler.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SafariExtensionHandler.h; sourceTree = "<group>"; };
 		EBFB629524CF47030074A3AF /* SafariExtensionHandler.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SafariExtensionHandler.m; sourceTree = "<group>"; };
 		EBFB629D24CF47030074A3AF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		EBFB629E24CF47030074A3AF /* script.js */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.javascript; path = script.js; sourceTree = "<group>"; };
 		EBFB62A224CF47030074A3AF /* SlogBlocker_Extension.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = SlogBlocker_Extension.entitlements; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -83,6 +96,18 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		EBCC40222587D7A600597847 /* Shared Files */ = {
+			isa = PBXGroup;
+			children = (
+				EBCC40252587D82C00597847 /* content.js */,
+				EBCC40242587D82C00597847 /* slogblocker.css */,
+				EB29E0802588175D00A6E3B5 /* options.css */,
+				EB29E0812588175D00A6E3B5 /* options.html */,
+				EB29E0822588175D00A6E3B5 /* options.js */,
+			);
+			name = "Shared Files";
+			sourceTree = "<group>";
+		};
 		EBFB626C24CF47020074A3AF = {
 			isa = PBXGroup;
 			children = (
@@ -129,11 +154,14 @@
 		EBFB629324CF47030074A3AF /* SlogBlocker Extension */ = {
 			isa = PBXGroup;
 			children = (
+				EBCC40222587D7A600597847 /* Shared Files */,
 				EBFB629424CF47030074A3AF /* SafariExtensionHandler.h */,
 				EBFB629524CF47030074A3AF /* SafariExtensionHandler.m */,
+				EB29E073258807B700A6E3B5 /* SafariExtensionViewController.h */,
+				EB29E074258807B700A6E3B5 /* SafariExtensionViewController.m */,
+				EB29E075258807B700A6E3B5 /* SafariExtensionViewController.xib */,
 				EBFB629D24CF47030074A3AF /* Info.plist */,
-				EBFB629E24CF47030074A3AF /* script.js */,
-				EB9096AF24CFCC25004DB984 /* stylesheet.css */,
+				EB29E07C2588089600A6E3B5 /* slogicon.pdf */,
 				EBFB62A224CF47030074A3AF /* SlogBlocker_Extension.entitlements */,
 			);
 			path = "SlogBlocker Extension";
@@ -228,8 +256,13 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				EBFB629F24CF47030074A3AF /* script.js in Resources */,
-				EB9096B024CFCC25004DB984 /* stylesheet.css in Resources */,
+				EB29E077258807B700A6E3B5 /* SafariExtensionViewController.xib in Resources */,
+				EBCC40272587D82C00597847 /* slogblocker.css in Resources */,
+				EB29E0832588175D00A6E3B5 /* options.css in Resources */,
+				EB29E0852588175D00A6E3B5 /* options.js in Resources */,
+				EB29E07D2588089700A6E3B5 /* slogicon.pdf in Resources */,
+				EBCC40282587D82C00597847 /* content.js in Resources */,
+				EB29E0842588175D00A6E3B5 /* options.html in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -250,6 +283,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EB29E076258807B700A6E3B5 /* SafariExtensionViewController.m in Sources */,
 				EBFB629624CF47030074A3AF /* SafariExtensionHandler.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -404,7 +438,7 @@
 					"@executable_path/../Frameworks",
 					"@executable_path/../../../../Frameworks",
 				);
-				MARKETING_VERSION = 1.1;
+				MARKETING_VERSION = 1.2;
 				PRODUCT_BUNDLE_IDENTIFIER = "com.fubar.SlogBlocker-Extension";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
@@ -423,7 +457,7 @@
 					"@executable_path/../Frameworks",
 					"@executable_path/../../../../Frameworks",
 				);
-				MARKETING_VERSION = 1.1;
+				MARKETING_VERSION = 1.2;
 				PRODUCT_BUNDLE_IDENTIFIER = "com.fubar.SlogBlocker-Extension";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
@@ -445,7 +479,7 @@
 					"$(inherited)",
 					"@executable_path/../Frameworks",
 				);
-				MARKETING_VERSION = 1.1;
+				MARKETING_VERSION = 1.2;
 				PRODUCT_BUNDLE_IDENTIFIER = com.fubar.SlogBlocker;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = macosx;
@@ -467,7 +501,7 @@
 					"$(inherited)",
 					"@executable_path/../Frameworks",
 				);
-				MARKETING_VERSION = 1.1;
+				MARKETING_VERSION = 1.2;
 				ONLY_ACTIVE_ARCH = YES;
 				PRODUCT_BUNDLE_IDENTIFIER = com.fubar.SlogBlocker;
 				PRODUCT_NAME = "$(TARGET_NAME)";

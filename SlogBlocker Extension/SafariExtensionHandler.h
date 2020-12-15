@@ -10,4 +10,11 @@
 
 @interface SafariExtensionHandler : SFSafariExtensionHandler
 
++ (SafariExtensionHandler *) sharedHandler;
+
+- (NSDictionary *)dictionaryWithBlockerSettings;
+- (NSString *)stringWithBlockerSettings;
+
+- (bool)updateBlockerSettingsWithString:(NSString *)string;
+
 @end

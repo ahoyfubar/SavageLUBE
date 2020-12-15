@@ -22,6 +22,7 @@
     [SFSafariApplication showPreferencesForExtensionWithIdentifier:@"com.fubar.SlogBlocker-Extension" completionHandler:^(NSError * _Nullable error) {
         if (error) {
             // Insert code to inform the user something went wrong.
+            NSLog(@"Failed to open Safari Extension Preferences: %@", error);
         }
     }];
 }
