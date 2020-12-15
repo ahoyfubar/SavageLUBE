@@ -1,0 +1,62 @@
+/* Tooltip container */
+.user-tooltip {
+  position: relative;
+  display: inline-block;
+}
+
+/* Tooltip text */
+.user-tooltip .user-tooltip-text {
+  visibility: hidden;
+  min-width: 100px;
+  background-color: grey;
+  color: #fff;
+  text-align: center;
+  padding: 5px 5px;
+  border-radius: 6px;
+  position: absolute;
+  z-index: 1;
+  top: 0px;
+  left: 92%;
+}
+
+.user-tooltip .user-tooltip-text::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  right: 100%;
+  margin-top: -5px;
+  border-width: 5px;
+  border-style: solid;
+  border-color: transparent grey transparent transparent;
+}
+
+/* Make the user image clickable */
+.user-image {
+  cursor: pointer;
+}
+
+/* Show the tooltip text when you mouse over the tooltip container */
+.user-tooltip:hover .user-tooltip-text {
+  visibility: visible;
+}
+
+/* Hide muted comments */
+.comment-muted {
+  display: none;
+}
+
+/* Adjust byline moved to header */
+.byline-header {
+    padding-bottom: 6px;
+}
+
+/* Blocker menu buttons */
+.blocker-menu button {
+  border: none;
+  padding: 0px;
+  background-color: transparent;
+}
+
+.blocker-menu button:hover {
+  text-decoration-line: underline;
+}

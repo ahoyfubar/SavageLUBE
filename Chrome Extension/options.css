@@ -1,0 +1,26 @@
+body {
+  font-family: arial, sans-serif;
+  font-size: 15px;
+}
+table {
+  font-family: arial, sans-serif;
+  border-collapse: collapse;
+  width: 100%;
+}
+td {
+  border: 1px solid #dddddd;
+  text-align: left;
+  padding: 4px;
+}
+tr:nth-child(even) {
+  background-color: #dddddd;
+}
+tr td:last-child {
+  width: 1%;
+  white-space: nowrap;
+}
+div.wrapper {
+  overflow: hidden;
+  overflow-y: scroll;
+  max-height: 100px;
+}
