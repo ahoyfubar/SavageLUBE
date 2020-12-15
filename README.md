@@ -1,6 +1,6 @@
-# SlogBlocker Chrome
+# SlogBlocker
 
-SlogBlocker Chrome is a browser extension that rearranges and improves the comments section for the [Savage Love Blog (SLOG)](http://www.thestranger.com/seattle/SavageLove) using Mozilla Firefox Safari, or Chromium-based browsers such as Google Chrome, Microsoft Edge, and several others.
+SlogBlocker is a browser extension that rearranges and improves the comments section for the [Savage Love Blog (SLOG)](http://www.thestranger.com/seattle/SavageLove) using Mozilla Firefox Safari, or Chromium-based browsers such as Google Chrome, Microsoft Edge, and several others.
 
 1. It creates duplicate page navigation buttons at the top of the comments pages.
 2. It moves the name of each writer from the end of their comment to the top.
@@ -23,7 +23,7 @@ In these browsers, a SlogBlocker icon appears next to the browser navigation bar
 
 ## Chrome and Edge
 
-To install SlogBlocker on Chrome or Edge, download `slogblocker-extension.zip` from the [Releases](https://github.com/ahoyfubar/SlogBlocker-Chrome/releases/) page and unzip it on your computer.
+To install SlogBlocker on Chrome or Edge, download `slogblocker-extension.zip` from the [Releases](https://github.com/ahoyfubar/SlogBlocker/releases/) page and unzip it on your computer.
 
 Type `about://extensions/` in the browser navigation bar, and enable _Developer mode_.
 
@@ -31,7 +31,7 @@ Click the _Load unpacked_ button, navigate to the folder where you unzipped the 
 
 ## Firefox
 
-Download `slogblocker_extension-fx.xpi` from the [Releases](https://github.com/ahoyfubar/SlogBlocker-Chrome/releases/) page.
+Download `slogblocker_extension-fx.xpi` from the [Releases](https://github.com/ahoyfubar/SlogBlocker/releases/) page.
 
 Open Firefox, and drag/drop the downloaded xpi file to its navigation bar. Follow the prompts to install the extension.
 
@@ -47,7 +47,7 @@ Running the SlogBlocker application will install the SlogBlocker extension. You 
 
 ## Chrome and Edge
 
-Download the updated `slogblocker-extension.zip` from the [Releases](https://github.com/ahoyfubar/SlogBlocker-Chrome/releases/) page and unzip it to the same folder where you installed previously.
+Download the updated `slogblocker-extension.zip` from the [Releases](https://github.com/ahoyfubar/SlogBlocker/releases/) page and unzip it to the same folder where you installed previously.
 
 Type `about://extensions/` in the browser navigation bar, and click the _Update_ button.
 
@@ -55,7 +55,7 @@ After upgrading SlogBlocker, reload any Savage Love web pages.
 
 ## Firefox
 
-Download the updated `slogblocker_extension-fx.xpi` from the [Releases](https://github.com/ahoyfubar/SlogBlocker-Chrome/releases/) page.
+Download the updated `slogblocker_extension-fx.xpi` from the [Releases](https://github.com/ahoyfubar/SlogBlocker/releases/) page.
 
 Open Firefox, and drag/drop the downloaded xpi file to its navigation bar. Follow the prompts to install the update.
 
