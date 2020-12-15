@@ -1,6 +1,6 @@
 # SlogBlocker
 
-SlogBlocker is a browser extension that rearranges and improves the comments section for the [Savage Love Blog (SLOG)](http://www.thestranger.com/seattle/SavageLove) using Mozilla Firefox Safari, or Chromium-based browsers such as Google Chrome, Microsoft Edge, and several others.
+SlogBlocker is a browser extension that rearranges and improves the comments section for the [Savage Love Blog (SLOG)](http://www.thestranger.com/seattle/SavageLove) using Mozilla Firefox, Safari, or Chromium-based browsers such as Google Chrome, Microsoft Edge, and several others.
 
 1. It creates duplicate page navigation buttons at the top of the comments pages.
 2. It moves the name of each writer from the end of their comment to the top.
