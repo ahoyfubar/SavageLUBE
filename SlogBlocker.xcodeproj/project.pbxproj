@@ -112,7 +112,7 @@
 			isa = PBXGroup;
 			children = (
 				EBFB627724CF47020074A3AF /* SlogBlocker */,
-				EBFB629324CF47030074A3AF /* SlogBlocker Extension */,
+				EBFB629324CF47030074A3AF /* Safari Extension */,
 				EBFB629024CF47030074A3AF /* Frameworks */,
 				EBFB627624CF47020074A3AF /* Products */,
 			);
@@ -151,7 +151,7 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		EBFB629324CF47030074A3AF /* SlogBlocker Extension */ = {
+		EBFB629324CF47030074A3AF /* Safari Extension */ = {
 			isa = PBXGroup;
 			children = (
 				EBCC40222587D7A600597847 /* Shared Files */,
@@ -164,7 +164,7 @@
 				EB29E07C2588089600A6E3B5 /* slogicon.pdf */,
 				EBFB62A224CF47030074A3AF /* SlogBlocker_Extension.entitlements */,
 			);
-			path = "SlogBlocker Extension";
+			path = "Safari Extension";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
