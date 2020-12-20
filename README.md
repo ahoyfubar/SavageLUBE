@@ -2,13 +2,14 @@
 
 SlogBlocker is a browser extension that rearranges and improves the comments section for the [Savage Love Blog (SLOG)](http://www.thestranger.com/seattle/SavageLove) using Mozilla Firefox, Safari, or Chromium-based browsers such as Google Chrome, Microsoft Edge, and several others.
 
-1. It creates duplicate page navigation buttons at the top of the comments pages.
-2. It moves the name of each writer from the end of their comment to the top.
-3. It turns @ mentions (e.g., fubar @123) into hyperlinks.
-4. It allows you to click a writer's avatar, and select a replacement avatar of your own.
-5. It allows you to block a writer. They no longer appear in the comments pages. You can unblock a writer in the SlogBlocker Extension settings (see below).
-6. It allows you to mute a writer. They appear, but their comments are not shown. If a writer is muted, you can click "Show Comment" to read what they wrote.
-7. It allows you to highlight a writer. Their comments will be emphasized and easy to find.
+1. It can create duplicate page navigation buttons at the top of the comments pages.
+2. It can move the name of each writer from the end of their comment to the top.
+3. It can turn @ mentions (e.g., fubar @123) into hyperlinks.
+4. It can show the writer's name when you hover over their avatar.
+5. It allows you to click a writer's avatar, and select a replacement avatar of your own.
+6. It allows you to block a writer. They no longer appear in the comments pages. You can unblock a writer in the SlogBlocker Extension settings (see below).
+7. It allows you to mute a writer. They appear, but their comments are not shown. If a writer is muted, you can click "Show Comment" to read what they wrote.
+8. It allows you to highlight a writer. Their comments will be emphasized and easy to find.
 
 # Settings
 
