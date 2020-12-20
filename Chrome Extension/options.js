@@ -12,6 +12,7 @@ function createSelectForAction(action) {
   let select = document.createElement("select");
   select.appendChild(createOptionForAction("Blocked", "hide", action));
   select.appendChild(createOptionForAction("Muted", "mute", action));
+  select.appendChild(createOptionForAction("Highlighted", "bold", action));
   select.appendChild(createOptionForAction("Visible", "none", action));
   return select;
 }

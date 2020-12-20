@@ -78,6 +78,7 @@ function updateBlockerSettingsWithUserInfo(userInfo) {
       user.avatar = userInfo.avatar;
       break;
     case "unmute":
+    case "unbold":
       user.action = "none";
       break;
     default:

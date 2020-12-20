@@ -78,7 +78,7 @@ static SafariExtensionHandler *_sharedHandler = nil;
     for (NSDictionary *user in users) {
         NSDictionary *update = [user mutableCopy];
         if ([name caseInsensitiveCompare:[user valueForKey:@"name"]] == NSOrderedSame ) {
-            if ([action isEqualToString:@"unmute"]) {
+            if ([action isEqualToString:@"unmute"] || [action isEqualToString:@"unbold"]) {
                 //NSLog(@"(%@) unmuted", name);
                 [update setValue:@"none" forKey:@"action"];
                 prefsUpdated = true;
@@ -96,14 +96,16 @@ static SafariExtensionHandler *_sharedHandler = nil;
             }
             if (prefsUpdated) {
                 [users removeObject:user];
-                [users addObject:update];
+                if (![[update valueForKey:@"action"] isEqualToString:@"none"] || ![[update valueForKey:@"avatar"] isEmpty]) {
+                    [users addObject:update];
+                }
                 break;
             }
         }
     }
     
     if (!prefsUpdated) {
-        if ([action isEqualToString:@"hide"] || [action isEqualToString:@"mute"]) {
+        if ([action isEqualToString:@"hide"] || [action isEqualToString:@"mute"] || [action isEqualToString:@"bold"]) {
             //NSLog(@"(%@) added with action (%@)", name, action);
             [users addObject:@{@"name":name, @"action":action}];
             prefsUpdated = true;

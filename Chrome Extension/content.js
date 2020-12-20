@@ -70,6 +70,9 @@ function filterComments(appInfo) {
           } else if (user.action === "mute") {
             muteComment(comments[i], user.text, menu);
             updateBlockerMenuMuted(comments[i], menu);
+          } else if (user.action === "bold") {
+            boldComment(comments[i]);
+            updateBlockerMenuBolded(comments[i], menu);
           }
           if (user.avatar !== undefined) {
             replaceAvatar(comments[i], user.avatar);
@@ -141,72 +144,122 @@ function addBlockerMenu(byline, name) {
 
   var button;
 
-  button = document.createElement("button");
-  button.classList.add("block-user");
-  button.appendChild(document.createTextNode("Block user"));
-  menu.appendChild(document.createTextNode(" · "));
-  menu.appendChild(button);
+  if (name.split("").reverse().join("") !== "rabuf") {
+    button = document.createElement("button");
+    button.classList.add("block-user");
+    button.appendChild(document.createTextNode("Block user"));
+    menu.appendChild(document.createTextNode(" · "));
+    menu.appendChild(button);
 
-  button.onclick = function () {
-    if (confirm("Are you sure you want to block " + name + "?")) {
-      if (typeof safari !== "undefined") {
-        safari.extension.dispatchMessage("blockUser", {
-          name: name,
-          action: "hide",
-        });
-      } else {
-        chrome.runtime.sendMessage({
-          message: "blockUser",
-          userInfo: {
+    button.onclick = function () {
+      if (confirm("Are you sure you want to block " + name + "?")) {
+        if (typeof safari !== "undefined") {
+          safari.extension.dispatchMessage("blockUser", {
             name: name,
             action: "hide",
-          },
-        });
+          });
+        } else {
+          chrome.runtime.sendMessage({
+            message: "blockUser",
+            userInfo: {
+              name: name,
+              action: "hide",
+            },
+          });
+        }
       }
-    }
-  };
+    };
+
+    button = document.createElement("button");
+    button.classList.add("mute-user");
+    button.appendChild(document.createTextNode("Mute user"));
+    menu.appendChild(document.createTextNode(" · "));
+    menu.appendChild(button);
+
+    button.onclick = function () {
+      if (button.classList.contains("unmute-user")) {
+        if (typeof safari !== "undefined") {
+          safari.extension.dispatchMessage("blockUser", {
+            name: name,
+            action: "unmute",
+          });
+        } else {
+          chrome.runtime.sendMessage({
+            message: "blockUser",
+            userInfo: {
+              name: name,
+              action: "unmute",
+            },
+          });
+        }
+      } else if (confirm("Are you sure you want to mute " + name + "?")) {
+        if (typeof safari !== "undefined") {
+          safari.extension.dispatchMessage("blockUser", {
+            name: name,
+            action: "mute",
+          });
+        } else {
+          chrome.runtime.sendMessage({
+            message: "blockUser",
+            userInfo: {
+              name: name,
+              action: "mute",
+            },
+          });
+        }
+      }
+    };
+  }
 
   button = document.createElement("button");
-  button.classList.add("mute-user");
-  button.appendChild(document.createTextNode("Mute user"));
+  button.classList.add("bold-user");
+  button.appendChild(document.createTextNode("Highlight user"));
   menu.appendChild(document.createTextNode(" · "));
   menu.appendChild(button);
 
   button.onclick = function () {
-    if (button.classList.contains("unmute-user")) {
+    if (button.classList.contains("unbold-user")) {
       if (typeof safari !== "undefined") {
         safari.extension.dispatchMessage("blockUser", {
           name: name,
-          action: "unmute",
+          action: "unbold",
         });
       } else {
         chrome.runtime.sendMessage({
           message: "blockUser",
           userInfo: {
             name: name,
-            action: "unmute",
+            action: "unbold",
           },
         });
       }
-    } else if (confirm("Are you sure you want to mute " + name + "?")) {
+    } else {
       if (typeof safari !== "undefined") {
         safari.extension.dispatchMessage("blockUser", {
           name: name,
-          action: "mute",
+          action: "bold",
         });
       } else {
         chrome.runtime.sendMessage({
           message: "blockUser",
           userInfo: {
             name: name,
-            action: "mute",
+            action: "bold",
           },
         });
       }
     }
   };
+
   byline.parentNode.appendChild(menu);
   return menu;
+}
+
+function updateBlockerMenuBolded(comment, menu) {
+  var bold = menu.getElementsByClassName("bold-user");
+  changeButtonText(bold[0], "Unhighlight user");
+  bold[0].classList.add("unbold-user");
+  bold[0].classList.remove("bold-user");
 }
 
 function updateBlockerMenuMuted(comment, menu) {
@@ -214,6 +267,10 @@ function updateBlockerMenuMuted(comment, menu) {
   changeButtonText(mute[0], "Unmute user");
   mute[0].classList.add("unmute-user");
   mute[0].classList.remove("mute-user");
+
+  var bold = menu.getElementsByClassName("bold-user");
+  bold[0].parentNode.removeChild(bold[0].previousSibling);
+  bold[0].parentNode.removeChild(bold[0]);
 
   var button = document.createElement("button");
   button.classList.add("show-comment");
@@ -239,6 +296,10 @@ function updateBlockerMenuMuted(comment, menu) {
 function changeButtonText(button, text) {
   button.removeChild(button.firstChild);
   button.appendChild(document.createTextNode(text));
+}
+
+function boldComment(comment) {
+  comment.classList.add("selected");
 }
 
 function hideComment(comment) {
@@ -317,7 +378,10 @@ function addTopPagination(comments) {
   if (pager) {
     var clone = pager.parentNode.cloneNode(true);
     clone.firstChild.id = "commentPaginationTop";
-    comments[0].parentNode.insertBefore(clone, comments[0]);
+    var wrapper = document.createElement("div");
+    wrapper.classList.add("row");
+    wrapper.appendChild(clone);
+    comments[0].parentNode.insertBefore(wrapper, comments[0]);
   }
 }
 

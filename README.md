@@ -8,6 +8,7 @@ SlogBlocker is a browser extension that rearranges and improves the comments sec
 4. It allows you to click a writer's avatar, and select a replacement avatar of your own.
 5. It allows you to block a writer. They no longer appear in the comments pages. You can unblock a writer in the SlogBlocker Extension settings (see below).
 6. It allows you to mute a writer. They appear, but their comments are not shown. If a writer is muted, you can click "Show Comment" to read what they wrote.
+7. It allows you to highlight a writer. Their comments will be emphasized and easy to find.
 
 # Settings
 

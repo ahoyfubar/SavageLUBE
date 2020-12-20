@@ -57,6 +57,8 @@
 		EB29E0802588175D00A6E3B5 /* options.css */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.css; name = options.css; path = "Chrome Extension/options.css"; sourceTree = SOURCE_ROOT; };
 		EB29E0812588175D00A6E3B5 /* options.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; name = options.html; path = "Chrome Extension/options.html"; sourceTree = SOURCE_ROOT; };
 		EB29E0822588175D00A6E3B5 /* options.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; name = options.js; path = "Chrome Extension/options.js"; sourceTree = SOURCE_ROOT; };
+		EB97078D258F918E00B9D9F3 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		EB97078E258F918E00B9D9F3 /* LICENSE */ = {isa = PBXFileReference; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
 		EBCC40242587D82C00597847 /* slogblocker.css */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.css; name = slogblocker.css; path = "Chrome Extension/slogblocker.css"; sourceTree = SOURCE_ROOT; };
 		EBCC40252587D82C00597847 /* content.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; name = content.js; path = "Chrome Extension/content.js"; sourceTree = SOURCE_ROOT; };
 		EBFB627524CF47020074A3AF /* SlogBlocker.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SlogBlocker.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -111,6 +113,8 @@
 		EBFB626C24CF47020074A3AF = {
 			isa = PBXGroup;
 			children = (
+				EB97078E258F918E00B9D9F3 /* LICENSE */,
+				EB97078D258F918E00B9D9F3 /* README.md */,
 				EBFB627724CF47020074A3AF /* SlogBlocker */,
 				EBFB629324CF47030074A3AF /* Safari Extension */,
 				EBFB629024CF47030074A3AF /* Frameworks */,
@@ -438,7 +442,7 @@
 					"@executable_path/../Frameworks",
 					"@executable_path/../../../../Frameworks",
 				);
-				MARKETING_VERSION = 1.3;
+				MARKETING_VERSION = 1.4;
 				PRODUCT_BUNDLE_IDENTIFIER = "com.fubar.SlogBlocker-Extension";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
@@ -457,7 +461,7 @@
 					"@executable_path/../Frameworks",
 					"@executable_path/../../../../Frameworks",
 				);
-				MARKETING_VERSION = 1.3;
+				MARKETING_VERSION = 1.4;
 				PRODUCT_BUNDLE_IDENTIFIER = "com.fubar.SlogBlocker-Extension";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
@@ -479,7 +483,7 @@
 					"$(inherited)",
 					"@executable_path/../Frameworks",
 				);
-				MARKETING_VERSION = 1.3;
+				MARKETING_VERSION = 1.4;
 				PRODUCT_BUNDLE_IDENTIFIER = com.fubar.SlogBlocker;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = macosx;
@@ -501,7 +505,7 @@
 					"$(inherited)",
 					"@executable_path/../Frameworks",
 				);
-				MARKETING_VERSION = 1.3;
+				MARKETING_VERSION = 1.4;
 				ONLY_ACTIVE_ARCH = YES;
 				PRODUCT_BUNDLE_IDENTIFIER = com.fubar.SlogBlocker;
 				PRODUCT_NAME = "$(TARGET_NAME)";
