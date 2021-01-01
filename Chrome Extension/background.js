@@ -25,7 +25,7 @@ chrome.runtime.onMessage.addListener(function (request, sender, sendResponse) {
     chrome.tabs.create({ url: request.url });
   } else if (
     request.message === "blockUser" ||
-    request.message == "changeAvatar"
+    request.message === "changeAvatar"
   ) {
     updateBlockerSettingsWithUserInfo(request.userInfo);
     broadcastMessage("settingsUpdated");
@@ -86,7 +86,7 @@ function updateBlockerSettingsWithUserInfo(userInfo) {
       break;
   }
 
-  if (user.action === "none" && !user.avatar) {
+  if ((!user.action || user.action === "none") && !user.avatar) {
     if (userIndex >= 0) {
       settings.users.splice(userIndex, 1);
     }

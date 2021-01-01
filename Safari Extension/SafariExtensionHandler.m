@@ -76,7 +76,7 @@ static SafariExtensionHandler *_sharedHandler = nil;
     
     NSMutableArray *users = [[prefs arrayForKey:@"users"] mutableCopy];
     for (NSDictionary *user in users) {
-        NSDictionary *update = [user mutableCopy];
+        NSMutableDictionary *update = [user mutableCopy];
         if ([name caseInsensitiveCompare:[user valueForKey:@"name"]] == NSOrderedSame ) {
             if ([action isEqualToString:@"unmute"] || [action isEqualToString:@"unbold"]) {
                 //NSLog(@"(%@) unmuted", name);
@@ -86,7 +86,12 @@ static SafariExtensionHandler *_sharedHandler = nil;
             else if([action isEqualToString:@"avatar"]) {
                 NSString *avatar = [appInfo valueForKey:@"avatar"];
                 //NSLog(@"(%@) new avatar (%@)", name, avatar);
-                [update setValue:avatar forKey:@"avatar"];
+                if (avatar.length > 0) {
+                    [update setValue:avatar forKey:@"avatar"];
+                }
+                else {
+                    [update removeObjectForKey:@"avatar"];
+                }
                 prefsUpdated = true;
             }
             else {
@@ -96,7 +101,7 @@ static SafariExtensionHandler *_sharedHandler = nil;
             }
             if (prefsUpdated) {
                 [users removeObject:user];
-                if (![[update valueForKey:@"action"] isEqualToString:@"none"] || ![[update valueForKey:@"avatar"] isEmpty]) {
+                if (![[update valueForKey:@"action"] isEqualToString:@"none"] || ([[update valueForKey:@"avatar"] length] > 0)) {
                     [users addObject:update];
                 }
                 break;
@@ -113,8 +118,10 @@ static SafariExtensionHandler *_sharedHandler = nil;
         else if ([action isEqualToString:@"avatar"]) {
             NSString *avatar = [appInfo valueForKey:@"avatar"];
             //NSLog(@"(%@) added with avatar (%@)", name, avatar);
-            [users addObject:@{@"name":name, @"action":@"none", @"avatar":avatar}];
-            prefsUpdated = true;
+            if (avatar.length > 0) {
+                [users addObject:@{@"name":name, @"action":@"none", @"avatar":avatar}];
+                prefsUpdated = true;
+            }
         }
     }
 

@@ -36,12 +36,12 @@ function applySettings(settingsString) {
 
   let userElement = document.getElementById("users");
   let userTable = userElement.getElementsByTagName("table")[0];
-  while(userTable.rows.length > 0) {
+  while (userTable.rows.length > 0) {
     userTable.deleteRow(0);
   }
   for (i = 0; i < settings.users.length; i++) {
     let user = settings.users[i];
-    if (user.action !== "none") {
+    if (user.action && user.action !== "none") {
       insertRowForUser(userTable, user);
     }
   }
@@ -55,11 +55,7 @@ function applyActionToUser(row, users) {
     return user.name.toUpperCase() === name.toUpperCase();
   });
   let action = row.getElementsByTagName("select")[0].value;
-  if (action === "none" && !users[userIndex].avatar) {
-    users.splice(userIndex, 1);
-  } else {
-    users[userIndex].action = action;
-  }
+  users[userIndex].action = action;
 }
 
 function retrieveSettings(settingsString) {
@@ -74,6 +70,14 @@ function retrieveSettings(settingsString) {
   let users = document.getElementById("users").getElementsByTagName("tr");
   for (i = 0; i < users.length; i++) {
     applyActionToUser(users[i], settings.users);
+  }
+
+  i = settings.users.length;
+  while (i--) {
+    let user = settings.users[i];
+    if ((!user.action || user.action === "none") && !user.avatar) {
+      settings.users.splice(i, 1);
+    }
   }
 
   return JSON.stringify(settings);
@@ -103,8 +107,8 @@ function saveSettingsChrome() {
   }, 1000);
 }
 
-document.addEventListener("DOMContentLoaded", function() {
-  if (typeof safari === 'undefined') {
+document.addEventListener("DOMContentLoaded", function () {
+  if (typeof safari === "undefined") {
     loadSettingsChrome();
   }
 });
