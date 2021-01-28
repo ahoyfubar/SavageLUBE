@@ -377,6 +377,7 @@ function addCommentLinks(baseurl, comment) {
     const parts = outerHTML.split("@");
     if (parts.length > 1) {
       for (j = 1; j < parts.length; j++) {
+        let found = false;
         const refno = parts[j].match(/^ ?[0-9]+/g);
         if (refno) {
           const tagno = parseInt(refno[0]);
@@ -386,7 +387,11 @@ function addCommentLinks(baseurl, comment) {
             const link = "<a href='" + href + tagno + "'>@" + refno + "</a>";
             const text = parts[j].substring(refno[0].length);
             parts[j] = link + text;
+            found = true;
           }
+        }
+        if (!found) {
+          parts[j] = `@${parts[j]}`;
         }
       }
       tags[i].outerHTML = parts.join("");

@@ -1,9 +1,9 @@
 {
   "manifest_version": 2,
   "name": "SlogBlocker Extension",
-  "version": "1.4.1",
+  "version": "1.4.2",
   "short_name": "SlogBlocker",
-  "description": "SlogBlocker allows you to reconfigure the comments section on Savage Love. Copyright © 2020 fubar. All rights reserved.",
+  "description": "SlogBlocker allows you to reconfigure the comments section on Savage Love. Copyright © 2021 fubar. All rights reserved.",
   "browser_action": {
     "default_icon": "slogicon.png"
   },
