@@ -73,7 +73,7 @@
 		</dict>
 	</dict>
 	<key>NSHumanReadableCopyright</key>
-	<string>Copyright © 2020 fubar. All rights reserved.</string>
+	<string>Copyright © 2021 fubar. All rights reserved.</string>
 	<key>NSHumanReadableDescription</key>
 	<string>This is a Safari Extension. It allows you to reconfigure the comments section on Savage Love.</string>
 </dict>
