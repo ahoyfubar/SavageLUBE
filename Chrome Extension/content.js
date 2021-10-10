@@ -1,7 +1,7 @@
 // content.js
 
 if (typeof safari !== "undefined") {
-  console.log("SlogBlocker on Safari");
+  console.log("SavageLUBE on Safari");
   document.addEventListener("DOMContentLoaded", function (event) {
     if (document.body.classList.contains("article-section-savage-love")) {
       // Set us up to receive messages from the app
@@ -11,7 +11,7 @@ if (typeof safari !== "undefined") {
     }
   });
 } else {
-  console.log("SlogBlocker on Chromium");
+  console.log("SavageLUBE on Chromium");
   if (document.body.classList.contains("article-section-savage-love")) {
     // Set us up to receive messages from the app
     chrome.runtime.onMessage.addListener(handleMessageChromium);
@@ -257,7 +257,7 @@ function addBlockerMenuMuteButton(name) {
 function addBlockerMenu(name) {
   const menu = document.createElement("span");
   menu.classList.add("weak");
-  menu.classList.add("blocker-menu");
+  menu.classList.add("savagelube-menu");
 
   if (name.split("").reverse().join("") !== "rabuf") {
     const blockButton = addBlockerMenuBlockButton(name);

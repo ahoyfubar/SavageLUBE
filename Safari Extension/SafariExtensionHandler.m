@@ -1,6 +1,6 @@
 //
 //  SafariExtensionHandler.m
-//  SlogBlocker Extension
+//  SavageLUBE Extension
 //
 //  Created by fubar on 2020-07-27.
 //  Copyright © 2020 fubar. All rights reserved.
@@ -268,7 +268,7 @@ static SafariExtensionHandler *_sharedHandler = nil;
 }
 
 - (void)contextMenuItemSelectedWithCommand:(NSString *)command inPage:(SFSafariPage *)page userInfo:(nullable NSDictionary<NSString *, id> *)userInfo {
-    if ([command caseInsensitiveCompare: @"SlogBlockerSettings"] == NSOrderedSame) {
+    if ([command caseInsensitiveCompare: @"SavageLUBESettings"] == NSOrderedSame) {
         [SFSafariApplication getActiveWindowWithCompletionHandler:^(SFSafariWindow * _Nullable activeWindow) {
             [activeWindow getToolbarItemWithCompletionHandler:^(SFSafariToolbarItem * _Nullable toolbarItem) {
                 [toolbarItem showPopover];

@@ -1,9 +1,9 @@
 {
   "manifest_version": 2,
-  "name": "SlogBlocker Extension",
-  "version": "1.4.2",
-  "short_name": "SlogBlocker",
-  "description": "SlogBlocker allows you to reconfigure the comments section on Savage Love. Copyright © 2021 fubar. All rights reserved.",
+  "name": "Savage Love Usability Browser Enhancement",
+  "version": "2.0",
+  "short_name": "SavageLUBE",
+  "description": "SavageLUBE allows you to reconfigure the comments section on Savage Love. Copyright © 2021 fubar. All rights reserved.",
   "browser_action": {
     "default_icon": "slogicon.png"
   },
@@ -11,7 +11,7 @@
     {
       "matches": ["*://*.thestranger.com/*"],
       "js": ["content.js"],
-      "css": ["slogblocker.css"]
+      "css": ["savagelube.css"]
     }
   ],
   "background": {

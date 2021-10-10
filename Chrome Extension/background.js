@@ -1,8 +1,8 @@
 // background.js
 
-let slogBlockerSettings = localStorage.getItem("slogBlockerSettings");
-if (!slogBlockerSettings) {
-  slogBlockerSettings = {
+let savagelubeSettings = localStorage.getItem("savagelubeSettings");
+if (!savagelubeSettings) {
+  savagelubeSettings = {
     users: [],
     addAvatarTooltips: false,
     moveUserBylines: true,
@@ -11,15 +11,15 @@ if (!slogBlockerSettings) {
   };
 
   localStorage.setItem(
-    "slogBlockerSettings",
-    JSON.stringify(slogBlockerSettings)
+    "savagelubeSettings",
+    JSON.stringify(savagelubeSettings)
   );
 }
 
 chrome.runtime.onMessage.addListener(function (request, sender, sendResponse) {
   if (request.message === "DOMContentLoaded") {
     sendMessageToTab("filterComments", sender.tab);
-  } else if (request.message === "slogBlockerSettingsChanged") {
+  } else if (request.message === "savagelubeSettingsChanged") {
     broadcastMessage("settingsUpdated");
   } else if (request.message === "openSettings") {
     chrome.tabs.create({ url: request.url });
@@ -46,12 +46,12 @@ function sendMessageToActiveTab(message) {
 function sendMessageToTab(message, tab) {
   chrome.tabs.sendMessage(tab.id, {
     message: message,
-    appInfo: JSON.parse(localStorage.getItem("slogBlockerSettings")),
+    appInfo: JSON.parse(localStorage.getItem("savagelubeSettings")),
   });
 }
 
 function broadcastMessage(message) {
-  const appInfo = JSON.parse(localStorage.getItem("slogBlockerSettings"));
+  const appInfo = JSON.parse(localStorage.getItem("savagelubeSettings"));
   const manifest = chrome.runtime.getManifest();
   manifest.content_scripts.forEach((element) => {
     chrome.tabs.query({ url: element.matches }, function (tabs) {
@@ -66,7 +66,7 @@ function broadcastMessage(message) {
 }
 
 function updateBlockerSettingsWithUserInfo(userInfo) {
-  let settings = JSON.parse(localStorage.getItem("slogBlockerSettings"));
+  let settings = JSON.parse(localStorage.getItem("savagelubeSettings"));
   let userIndex = settings.users.findIndex(function (user) {
     return user.name.toUpperCase() === userInfo.name.toUpperCase();
   });
@@ -98,6 +98,6 @@ function updateBlockerSettingsWithUserInfo(userInfo) {
     }
   }
 
-  localStorage.setItem("slogBlockerSettings", JSON.stringify(settings));
+  localStorage.setItem("savagelubeSettings", JSON.stringify(settings));
   return settings;
 }

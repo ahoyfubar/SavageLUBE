@@ -13,14 +13,14 @@
 		EB29E0832588175D00A6E3B5 /* options.css in Resources */ = {isa = PBXBuildFile; fileRef = EB29E0802588175D00A6E3B5 /* options.css */; };
 		EB29E0842588175D00A6E3B5 /* options.html in Resources */ = {isa = PBXBuildFile; fileRef = EB29E0812588175D00A6E3B5 /* options.html */; };
 		EB29E0852588175D00A6E3B5 /* options.js in Resources */ = {isa = PBXBuildFile; fileRef = EB29E0822588175D00A6E3B5 /* options.js */; };
-		EBCC40272587D82C00597847 /* slogblocker.css in Resources */ = {isa = PBXBuildFile; fileRef = EBCC40242587D82C00597847 /* slogblocker.css */; };
+		EBCC40272587D82C00597847 /* savagelube.css in Resources */ = {isa = PBXBuildFile; fileRef = EBCC40242587D82C00597847 /* savagelube.css */; };
 		EBCC40282587D82C00597847 /* content.js in Resources */ = {isa = PBXBuildFile; fileRef = EBCC40252587D82C00597847 /* content.js */; };
 		EBFB627C24CF47020074A3AF /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = EBFB627B24CF47020074A3AF /* AppDelegate.m */; };
 		EBFB627F24CF47020074A3AF /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EBFB627D24CF47020074A3AF /* Main.storyboard */; };
 		EBFB628224CF47020074A3AF /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EBFB628124CF47020074A3AF /* ViewController.m */; };
 		EBFB628424CF47030074A3AF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EBFB628324CF47030074A3AF /* Assets.xcassets */; };
 		EBFB628724CF47030074A3AF /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = EBFB628624CF47030074A3AF /* main.m */; };
-		EBFB628D24CF47030074A3AF /* SlogBlocker Extension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = EBFB628C24CF47030074A3AF /* SlogBlocker Extension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		EBFB628D24CF47030074A3AF /* SavageLUBE Extension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = EBFB628C24CF47030074A3AF /* SavageLUBE Extension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		EBFB629224CF47030074A3AF /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EBFB629124CF47030074A3AF /* Cocoa.framework */; };
 		EBFB629624CF47030074A3AF /* SafariExtensionHandler.m in Sources */ = {isa = PBXBuildFile; fileRef = EBFB629524CF47030074A3AF /* SafariExtensionHandler.m */; };
 /* End PBXBuildFile section */
@@ -31,7 +31,7 @@
 			containerPortal = EBFB626D24CF47020074A3AF /* Project object */;
 			proxyType = 1;
 			remoteGlobalIDString = EBFB628B24CF47030074A3AF;
-			remoteInfo = "SlogBlocker Extension";
+			remoteInfo = "SavageLUBE Extension";
 		};
 /* End PBXContainerItemProxy section */
 
@@ -42,7 +42,7 @@
 			dstPath = "";
 			dstSubfolderSpec = 13;
 			files = (
-				EBFB628D24CF47030074A3AF /* SlogBlocker Extension.appex in Embed App Extensions */,
+				EBFB628D24CF47030074A3AF /* SavageLUBE Extension.appex in Embed App Extensions */,
 			);
 			name = "Embed App Extensions";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -59,10 +59,10 @@
 		EB29E0822588175D00A6E3B5 /* options.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; name = options.js; path = "Chrome Extension/options.js"; sourceTree = SOURCE_ROOT; };
 		EB97078D258F918E00B9D9F3 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		EB97078E258F918E00B9D9F3 /* LICENSE */ = {isa = PBXFileReference; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
-		EBCC40242587D82C00597847 /* slogblocker.css */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.css; name = slogblocker.css; path = "Chrome Extension/slogblocker.css"; sourceTree = SOURCE_ROOT; };
+		EBCC40242587D82C00597847 /* savagelube.css */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.css; name = savagelube.css; path = "Chrome Extension/savagelube.css"; sourceTree = SOURCE_ROOT; };
 		EBCC40252587D82C00597847 /* content.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; name = content.js; path = "Chrome Extension/content.js"; sourceTree = SOURCE_ROOT; };
-		EBFB627524CF47020074A3AF /* SlogBlocker.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SlogBlocker.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		EBFB627824CF47020074A3AF /* SlogBlocker.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = SlogBlocker.entitlements; sourceTree = "<group>"; };
+		EBFB627524CF47020074A3AF /* SavageLUBE.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SavageLUBE.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		EBFB627824CF47020074A3AF /* SavageLUBE.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = SavageLUBE.entitlements; sourceTree = "<group>"; };
 		EBFB627A24CF47020074A3AF /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		EBFB627B24CF47020074A3AF /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		EBFB627E24CF47020074A3AF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -71,12 +71,12 @@
 		EBFB628324CF47030074A3AF /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		EBFB628524CF47030074A3AF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		EBFB628624CF47030074A3AF /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		EBFB628C24CF47030074A3AF /* SlogBlocker Extension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "SlogBlocker Extension.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
+		EBFB628C24CF47030074A3AF /* SavageLUBE Extension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "SavageLUBE Extension.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
 		EBFB629124CF47030074A3AF /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
 		EBFB629424CF47030074A3AF /* SafariExtensionHandler.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SafariExtensionHandler.h; sourceTree = "<group>"; };
 		EBFB629524CF47030074A3AF /* SafariExtensionHandler.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SafariExtensionHandler.m; sourceTree = "<group>"; };
 		EBFB629D24CF47030074A3AF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		EBFB62A224CF47030074A3AF /* SlogBlocker_Extension.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = SlogBlocker_Extension.entitlements; sourceTree = "<group>"; };
+		EBFB62A224CF47030074A3AF /* SavageLUBE_Extension.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = SavageLUBE_Extension.entitlements; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -102,7 +102,7 @@
 			isa = PBXGroup;
 			children = (
 				EBCC40252587D82C00597847 /* content.js */,
-				EBCC40242587D82C00597847 /* slogblocker.css */,
+				EBCC40242587D82C00597847 /* savagelube.css */,
 				EB29E0802588175D00A6E3B5 /* options.css */,
 				EB29E0812588175D00A6E3B5 /* options.html */,
 				EB29E0822588175D00A6E3B5 /* options.js */,
@@ -115,7 +115,7 @@
 			children = (
 				EB97078E258F918E00B9D9F3 /* LICENSE */,
 				EB97078D258F918E00B9D9F3 /* README.md */,
-				EBFB627724CF47020074A3AF /* SlogBlocker */,
+				EBFB627724CF47020074A3AF /* SavageLUBE */,
 				EBFB629324CF47030074A3AF /* Safari Extension */,
 				EBFB629024CF47030074A3AF /* Frameworks */,
 				EBFB627624CF47020074A3AF /* Products */,
@@ -125,16 +125,16 @@
 		EBFB627624CF47020074A3AF /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				EBFB627524CF47020074A3AF /* SlogBlocker.app */,
-				EBFB628C24CF47030074A3AF /* SlogBlocker Extension.appex */,
+				EBFB627524CF47020074A3AF /* SavageLUBE.app */,
+				EBFB628C24CF47030074A3AF /* SavageLUBE Extension.appex */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		EBFB627724CF47020074A3AF /* SlogBlocker */ = {
+		EBFB627724CF47020074A3AF /* SavageLUBE */ = {
 			isa = PBXGroup;
 			children = (
-				EBFB627824CF47020074A3AF /* SlogBlocker.entitlements */,
+				EBFB627824CF47020074A3AF /* SavageLUBE.entitlements */,
 				EBFB627A24CF47020074A3AF /* AppDelegate.h */,
 				EBFB627B24CF47020074A3AF /* AppDelegate.m */,
 				EBFB627D24CF47020074A3AF /* Main.storyboard */,
@@ -144,7 +144,7 @@
 				EBFB628524CF47030074A3AF /* Info.plist */,
 				EBFB628624CF47030074A3AF /* main.m */,
 			);
-			path = SlogBlocker;
+			path = SavageLUBE;
 			sourceTree = "<group>";
 		};
 		EBFB629024CF47030074A3AF /* Frameworks */ = {
@@ -166,7 +166,7 @@
 				EB29E075258807B700A6E3B5 /* SafariExtensionViewController.xib */,
 				EBFB629D24CF47030074A3AF /* Info.plist */,
 				EB29E07C2588089600A6E3B5 /* slogicon.pdf */,
-				EBFB62A224CF47030074A3AF /* SlogBlocker_Extension.entitlements */,
+				EBFB62A224CF47030074A3AF /* SavageLUBE_Extension.entitlements */,
 			);
 			path = "Safari Extension";
 			sourceTree = "<group>";
@@ -174,9 +174,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		EBFB627424CF47020074A3AF /* SlogBlocker */ = {
+		EBFB627424CF47020074A3AF /* SavageLUBE */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = EBFB62A924CF47030074A3AF /* Build configuration list for PBXNativeTarget "SlogBlocker" */;
+			buildConfigurationList = EBFB62A924CF47030074A3AF /* Build configuration list for PBXNativeTarget "SavageLUBE" */;
 			buildPhases = (
 				EBFB627124CF47020074A3AF /* Sources */,
 				EBFB627224CF47020074A3AF /* Frameworks */,
@@ -188,14 +188,14 @@
 			dependencies = (
 				EBFB628F24CF47030074A3AF /* PBXTargetDependency */,
 			);
-			name = SlogBlocker;
-			productName = SlogBlocker;
-			productReference = EBFB627524CF47020074A3AF /* SlogBlocker.app */;
+			name = SavageLUBE;
+			productName = SavageLUBE;
+			productReference = EBFB627524CF47020074A3AF /* SavageLUBE.app */;
 			productType = "com.apple.product-type.application";
 		};
-		EBFB628B24CF47030074A3AF /* SlogBlocker Extension */ = {
+		EBFB628B24CF47030074A3AF /* SavageLUBE Extension */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = EBFB62A524CF47030074A3AF /* Build configuration list for PBXNativeTarget "SlogBlocker Extension" */;
+			buildConfigurationList = EBFB62A524CF47030074A3AF /* Build configuration list for PBXNativeTarget "SavageLUBE Extension" */;
 			buildPhases = (
 				EBFB628824CF47030074A3AF /* Sources */,
 				EBFB628924CF47030074A3AF /* Frameworks */,
@@ -205,9 +205,9 @@
 			);
 			dependencies = (
 			);
-			name = "SlogBlocker Extension";
-			productName = "SlogBlocker Extension";
-			productReference = EBFB628C24CF47030074A3AF /* SlogBlocker Extension.appex */;
+			name = "SavageLUBE Extension";
+			productName = "SavageLUBE Extension";
+			productReference = EBFB628C24CF47030074A3AF /* SavageLUBE Extension.appex */;
 			productType = "com.apple.product-type.app-extension";
 		};
 /* End PBXNativeTarget section */
@@ -227,7 +227,7 @@
 					};
 				};
 			};
-			buildConfigurationList = EBFB627024CF47020074A3AF /* Build configuration list for PBXProject "SlogBlocker" */;
+			buildConfigurationList = EBFB627024CF47020074A3AF /* Build configuration list for PBXProject "SavageLUBE" */;
 			compatibilityVersion = "Xcode 9.3";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -240,8 +240,8 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				EBFB627424CF47020074A3AF /* SlogBlocker */,
-				EBFB628B24CF47030074A3AF /* SlogBlocker Extension */,
+				EBFB627424CF47020074A3AF /* SavageLUBE */,
+				EBFB628B24CF47030074A3AF /* SavageLUBE Extension */,
 			);
 		};
 /* End PBXProject section */
@@ -261,7 +261,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				EB29E077258807B700A6E3B5 /* SafariExtensionViewController.xib in Resources */,
-				EBCC40272587D82C00597847 /* slogblocker.css in Resources */,
+				EBCC40272587D82C00597847 /* savagelube.css in Resources */,
 				EB29E0832588175D00A6E3B5 /* options.css in Resources */,
 				EB29E0852588175D00A6E3B5 /* options.js in Resources */,
 				EB29E07D2588089700A6E3B5 /* slogicon.pdf in Resources */,
@@ -297,7 +297,7 @@
 /* Begin PBXTargetDependency section */
 		EBFB628F24CF47030074A3AF /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = EBFB628B24CF47030074A3AF /* SlogBlocker Extension */;
+			target = EBFB628B24CF47030074A3AF /* SavageLUBE Extension */;
 			targetProxy = EBFB628E24CF47030074A3AF /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
@@ -370,7 +370,7 @@
 				MACOSX_DEPLOYMENT_TARGET = 10.12;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
-				ONLY_ACTIVE_ARCH = YES;
+				ONLY_ACTIVE_ARCH = NO;
 				SDKROOT = macosx;
 			};
 			name = Debug;
@@ -425,7 +425,7 @@
 				MACOSX_DEPLOYMENT_TARGET = 10.12;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
-				ONLY_ACTIVE_ARCH = YES;
+				ONLY_ACTIVE_ARCH = NO;
 				SDKROOT = macosx;
 			};
 			name = Release;
@@ -433,7 +433,7 @@
 		EBFB62A624CF47030074A3AF /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				CODE_SIGN_ENTITLEMENTS = "Safari Extension/SlogBlocker_Extension.entitlements";
+				CODE_SIGN_ENTITLEMENTS = "Safari Extension/SavageLUBE_Extension.entitlements";
 				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = "Safari Extension/Info.plist";
@@ -442,8 +442,8 @@
 					"@executable_path/../Frameworks",
 					"@executable_path/../../../../Frameworks",
 				);
-				MARKETING_VERSION = 1.4.2;
-				PRODUCT_BUNDLE_IDENTIFIER = "com.fubar.SlogBlocker-Extension";
+				MARKETING_VERSION = 2.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.fubar.SavageLUBE-Extension";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
 			};
@@ -452,7 +452,7 @@
 		EBFB62A724CF47030074A3AF /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				CODE_SIGN_ENTITLEMENTS = "Safari Extension/SlogBlocker_Extension.entitlements";
+				CODE_SIGN_ENTITLEMENTS = "Safari Extension/SavageLUBE_Extension.entitlements";
 				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = "Safari Extension/Info.plist";
@@ -461,8 +461,8 @@
 					"@executable_path/../Frameworks",
 					"@executable_path/../../../../Frameworks",
 				);
-				MARKETING_VERSION = 1.4.2;
-				PRODUCT_BUNDLE_IDENTIFIER = "com.fubar.SlogBlocker-Extension";
+				MARKETING_VERSION = 2.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.fubar.SavageLUBE-Extension";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
 			};
@@ -472,19 +472,19 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_ENTITLEMENTS = SlogBlocker/SlogBlocker.entitlements;
+				CODE_SIGN_ENTITLEMENTS = SavageLUBE/SavageLUBE.entitlements;
 				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
 				DEVELOPMENT_TEAM = N8D2RX8FXR;
 				ENABLE_HARDENED_RUNTIME = YES;
-				INFOPLIST_FILE = SlogBlocker/Info.plist;
+				INFOPLIST_FILE = SavageLUBE/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/../Frameworks",
 				);
-				MARKETING_VERSION = 1.4.2;
-				PRODUCT_BUNDLE_IDENTIFIER = com.fubar.SlogBlocker;
+				MARKETING_VERSION = 2.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.fubar.SavageLUBE;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = macosx;
 			};
@@ -494,20 +494,20 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_ENTITLEMENTS = SlogBlocker/SlogBlocker.entitlements;
+				CODE_SIGN_ENTITLEMENTS = SavageLUBE/SavageLUBE.entitlements;
 				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
 				DEVELOPMENT_TEAM = N8D2RX8FXR;
 				ENABLE_HARDENED_RUNTIME = YES;
-				INFOPLIST_FILE = SlogBlocker/Info.plist;
+				INFOPLIST_FILE = SavageLUBE/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/../Frameworks",
 				);
-				MARKETING_VERSION = 1.4.2;
-				ONLY_ACTIVE_ARCH = YES;
-				PRODUCT_BUNDLE_IDENTIFIER = com.fubar.SlogBlocker;
+				MARKETING_VERSION = 2.0;
+				ONLY_ACTIVE_ARCH = NO;
+				PRODUCT_BUNDLE_IDENTIFIER = com.fubar.SavageLUBE;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = macosx;
 			};
@@ -516,7 +516,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		EBFB627024CF47020074A3AF /* Build configuration list for PBXProject "SlogBlocker" */ = {
+		EBFB627024CF47020074A3AF /* Build configuration list for PBXProject "SavageLUBE" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				EBFB62A324CF47030074A3AF /* Debug */,
@@ -525,7 +525,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		EBFB62A524CF47030074A3AF /* Build configuration list for PBXNativeTarget "SlogBlocker Extension" */ = {
+		EBFB62A524CF47030074A3AF /* Build configuration list for PBXNativeTarget "SavageLUBE Extension" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				EBFB62A624CF47030074A3AF /* Debug */,
@@ -534,7 +534,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		EBFB62A924CF47030074A3AF /* Build configuration list for PBXNativeTarget "SlogBlocker" */ = {
+		EBFB62A924CF47030074A3AF /* Build configuration list for PBXNativeTarget "SavageLUBE" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				EBFB62AA24CF47030074A3AF /* Debug */,

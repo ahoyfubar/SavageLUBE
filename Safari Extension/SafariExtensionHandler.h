@@ -1,6 +1,6 @@
 //
 //  SafariExtensionHandler.h
-//  SlogBlocker Extension
+//  SavageLUBE Extension
 //
 //  Created by fubar on 2020-07-27.
 //  Copyright © 2020 fubar. All rights reserved.

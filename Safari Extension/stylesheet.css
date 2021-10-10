@@ -47,16 +47,16 @@
 
 /* Adjust byline moved to header */
 .byline-header {
-    padding-bottom: 6px;
+  padding-bottom: 6px;
 }
 
 /* Blocker menu buttons */
-.blocker-menu button {
+.savagelube-menu button {
   border: none;
   padding: 0px;
   background-color: transparent;
 }
 
-.blocker-menu button:hover {
+.savagelube-menu button:hover {
   text-decoration-line: underline;
 }

@@ -5,7 +5,7 @@
 	<key>CFBundleDevelopmentRegion</key>
 	<string>$(DEVELOPMENT_LANGUAGE)</string>
 	<key>CFBundleDisplayName</key>
-	<string>SlogBlocker Extension</string>
+	<string>SavageLUBE Extension</string>
 	<key>CFBundleExecutable</key>
 	<string>$(EXECUTABLE_NAME)</string>
 	<key>CFBundleIdentifier</key>
@@ -35,29 +35,20 @@
 				<string>content.js</string>
 			</dict>
 		</array>
-		<key>SFSafariStyleSheet</key>
-		<array>
-			<dict>
-				<key>Style Sheet</key>
-				<string>slogblocker.css</string>
-			</dict>
-		</array>
-		<key>SFSafariWebsiteAccess</key>
-		<dict>
-			<key>Allowed Domains</key>
-			<array>
-				<string>*.thestranger.com</string>
-			</array>
-			<key>Level</key>
-			<string>Some</string>
-		</dict>
 		<key>SFSafariContextMenu</key>
 		<array>
 			<dict>
 				<key>Command</key>
-				<string>SlogBlockerSettings</string>
+				<string>SavageLUBESettings</string>
 				<key>Text</key>
-				<string>SlogBlocker...</string>
+				<string>SavageLUBE...</string>
+			</dict>
+		</array>
+		<key>SFSafariStyleSheet</key>
+		<array>
+			<dict>
+				<key>Style Sheet</key>
+				<string>savagelube.css</string>
 			</dict>
 		</array>
 		<key>SFSafariToolbarItem</key>
@@ -69,12 +60,21 @@
 			<key>Image</key>
 			<string>slogicon.pdf</string>
 			<key>Label</key>
-			<string>SlogBlocker</string>
+			<string>SavageLUBE</string>
+		</dict>
+		<key>SFSafariWebsiteAccess</key>
+		<dict>
+			<key>Allowed Domains</key>
+			<array>
+				<string>*.thestranger.com</string>
+			</array>
+			<key>Level</key>
+			<string>Some</string>
 		</dict>
 	</dict>
 	<key>NSHumanReadableCopyright</key>
 	<string>Copyright © 2021 fubar. All rights reserved.</string>
 	<key>NSHumanReadableDescription</key>
-	<string>This is a Safari Extension. It allows you to reconfigure the comments section on Savage Love.</string>
+	<string>The Savage Love Usability Browser Enhancement (SavageLUBE) allows you to reconfigure the comments section on Savage Love.</string>
 </dict>
 </plist>

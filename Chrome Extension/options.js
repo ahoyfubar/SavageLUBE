@@ -84,7 +84,7 @@ function retrieveSettings(settingsString) {
 }
 
 function loadSettingsChrome() {
-  if (applySettings(localStorage.getItem("slogBlockerSettings"))) {
+  if (applySettings(localStorage.getItem("savagelubeSettings"))) {
     var saveButton = document.getElementById("save");
     saveButton.hidden = false;
     saveButton.addEventListener("click", saveSettingsChrome);
@@ -92,11 +92,11 @@ function loadSettingsChrome() {
 }
 
 function saveSettingsChrome() {
-  var settings = retrieveSettings(localStorage.getItem("slogBlockerSettings"));
-  localStorage.setItem("slogBlockerSettings", settings);
+  var settings = retrieveSettings(localStorage.getItem("savagelubeSettings"));
+  localStorage.setItem("savagelubeSettings", settings);
 
   chrome.runtime.sendMessage({
-    message: "slogBlockerSettingsChanged",
+    message: "savagelubeSettingsChanged",
   });
 
   var status = document.getElementById("status");
